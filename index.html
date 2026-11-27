@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be my girlfriend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="hero">
+      <h1 class="title" id="title">
+        <span class="word" style="--i: 0">Be</span>
+        <span class="word" style="--i: 1">my</span>
+        <span class="word accent" style="--i: 2">girlfriend</span>
+      </h1>
+    </section>
+
+    <section class="reasons-row">
+      <div class="reasons">
+        <button
+          class="reasons-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="reasons-yes-panel"
+          id="reasons-yes-toggle"
+        >
+          <span class="chevron" aria-hidden="true"></span>
+          <span class="toggle-label">Причины согласиться</span>
+        </button>
+
+        <div class="reasons-panel" id="reasons-yes-panel" role="region" aria-labelledby="reasons-yes-toggle">
+          <ul class="reasons-list">
+            <li style="--i: 0">Я смешной</li>
+            <li style="--i: 1">Дарю цветочки</li>
+            <li style="--i: 2">Ты балдеешь с наших разговоров</li>
+            <li style="--i: 3">Я тебя люблю</li>
+            <li style="--i: 4">Мы все равно и так встречаемся</li>
+            <li style="--i: 5">Ну пожалуйста</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reasons">
+        <button
+          class="reasons-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="reasons-no-panel"
+          id="reasons-no-toggle"
+        >
+          <span class="chevron" aria-hidden="true"></span>
+          <span class="toggle-label">Причины отказаться</span>
+        </button>
+
+        <div class="reasons-panel" id="reasons-no-panel" role="region" aria-labelledby="reasons-no-toggle">
+          <ul class="reasons-list">
+            <li style="--i: 0">Кто вообще подумает сюда нажимать, тут все равно ничего нет</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <button class="agree-btn" type="button" id="agree-btn">
+        <span class="agree-content" id="agree-content">Согласиться</span>
+      </button>
+      <p class="disclaimer" id="disclaimer">
+        Принимая предложение ты соглашаешься с
+        <button type="button" class="disclaimer-link" id="disclaimer-link">условиями</button>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
